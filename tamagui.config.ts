@@ -1,16 +1,16 @@
 import { tokens } from "@tamagui/themes/v2";
-import { themes } from "@tamagui/themes/v2-themes";
 import { shorthands } from "@tamagui/shorthands";
 import { CreateTamaguiProps, createTamagui } from "tamagui"; // or '@tamagui/core'
 import { animations } from "./theme/animations.css";
 import { media } from "./theme/media";
 import { fonts } from "./theme/fonts";
+import { themes } from "./theme/theme";
 
 export const configBase = {
  defaultFont: "body",
  shouldAddPrefersColorThemes: true,
  themeClassNameOnRoot: true,
- themes,
+ themes: themes,
  media,
  shorthands,
  tokens,
