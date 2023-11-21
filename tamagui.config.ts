@@ -1,10 +1,10 @@
-import { tokens } from "@tamagui/themes/v2";
 import { shorthands } from "@tamagui/shorthands";
 import { CreateTamaguiProps, createTamagui } from "tamagui"; // or '@tamagui/core'
 import { animations } from "./theme/animations.css";
 import { media } from "./theme/media";
 import { fonts } from "./theme/fonts";
 import { themes } from "./theme/theme";
+import { tokens } from "./theme/tokens";
 
 export const configBase = {
  defaultFont: "body",
@@ -13,7 +13,7 @@ export const configBase = {
  themes: themes,
  media,
  shorthands,
- tokens,
+ tokens: tokens,
  fonts,
  mediaQueryDefaultActive: {
   xl: true,
